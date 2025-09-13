@@ -17,8 +17,6 @@ const appcontainer = document.querySelector(".appcontainer");
 
 const cityinput = searchbox.value;
 
-const apikey = "L6G94ZNQZHTBZ8BV88S94CJRY";
-
 function handleInput(event){
     event.preventDefault();
     getweatherdata();
@@ -31,7 +29,7 @@ async function getweatherdata(){
         return;
     }
 
-    const response = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${searchbox.value}?key=${apikey}`);
+    const response = await fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${searchbox.value}?key=L6G94ZNQZHTBZ8BV88S94CJRY`);
     const result = await response.json();
 
     document.getElementById("searchbox").value = "";
@@ -51,7 +49,7 @@ async function getweatherdata(){
     if(weatherstatuscheck == "Clear"){
         weatheremoji.textContent = "☀️";
     }
-    else if(weatherstatuscheck == "Partially cloudy"){
+    else if(weatherstatuscheck == "Partially cloudy" || weatherstatuscheck == "Rain, Partially cloudy"){
         weatheremoji.textContent = "⛅";
     }
     else if(weatherstatuscheck == "Cloudy" || weatherstatuscheck == "Overcast"){
@@ -88,6 +86,7 @@ async function getweatherdata(){
         case "Snow":
             appcontainer.style.background = "linear-gradient(45deg, #dfe6e9, #a29bfe)";
             break;
+        case "Rain, Partially cloudy":
         case "Cloudy":
             appcontainer.style.background = "linear-gradient(45deg, #616161, #9bc5c3)";
             break;
