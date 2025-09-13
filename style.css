@@ -1,0 +1,78 @@
+body{
+  background-color: rgb(116, 223, 255);
+}
+form{
+  margin-top: 10px;
+}
+.appcontainer{
+  border-radius: 7px;
+  background: linear-gradient(45deg, #fd79a8, #fdcb6e);
+  width: 40vw;
+  height: 97vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  overflow: auto;
+}
+#searchbox{
+  border-radius: 7px;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  font-family: arial;
+}
+#searchbtn{
+  cursor: pointer;
+  border: none;
+  font-size: 2.1rem;
+  font-weight: bold;
+  border-radius: 7px;
+  background-color: chartreuse;
+  color: white;
+}
+#searchbtn:hover{
+  background-color: hsl(90, 100%, 40%);
+}
+.temperatures{
+  background: linear-gradient(135deg,rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.10) 100%);  backdrop-filter: blur(77px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 300px;
+  width: 34vw;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  border-radius: 10px;
+  color: white;
+}
+.temperatures p{
+  font-size: 1.1rem;
+  font-family: arial;
+}
+.extrainfocontainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 34vw;
+  height: 30vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 11px;
+  border-radius: 10px;
+}
+.extrainfocontainer div{
+  background: linear-gradient(135deg,rgba(255,255,255,0.3) 0%,rgba(255,255,255,0.10) 100%);
+  padding: 10px;
+  width: 15vw;
+  height: 12.5vh;
+  border-radius: 10px;
+  color: white;
+}
+.extrainfocontainer div p{
+  font-family: arial;
+  margin: 8px;
+}
+.weatherinfo{
+  display: none;
+}

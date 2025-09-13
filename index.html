@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+
+  <div class="appcontainer">
+
+    <form onsubmit="handleInput(event)">
+      <input id="searchbox" type="text" placeholder="Enter a city" onkeypress="checkEnter(event)">
+      <button id="searchbtn" type="submit">Search</button>
+    </form>
+
+    <div class="weatherinfo">
+
+      <p id="city" style="font-size: 1.6rem; font-family: arial; color: white;">New York</p>
+
+      <p id="date" style="font-size: 1.1rem; font-family: arial; color: white;">7sept</p>
+
+      <p id="weatheremoji" style="font-size: 4rem; margin: 0px;">☀️</p>
+
+      <p id="currenttemp" style="color: white; font-size: 1.7rem; font-family: arial; font-size: 1.7rem;">32</p>
+
+      <p id="weatherstatus" style="color: white; font-family: arial; font-size: 1.5rem;">Sunny</p>
+
+      <div class="temperatures">
+        <p id="maxtemp">Max:</p>
+        <p id="mintemp">Min:</p>
+      </div>
+
+      <div class="extrainfocontainer">
+
+        <div id="humidity">
+          <p>💧</p>
+          <p>Humidity</p>
+          <p id="humidityvalue"></p>
+        </div>
+
+        <div id="windspeed">
+          <p>🍃</p>
+          <P>Wind Speed</P>
+          <p id="windspeedvalue"></p>
+        </div>
+
+        <div id="uvindex">
+          <p>☀️</p>
+          <p>UV Index</p>
+          <p id="uvindexvalue"></p>
+        </div>
+
+        <div id="visibility">
+          <p>👁️</p>
+          <p>Visibility</p>
+          <p id="visibilityvalue"></p>
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+
+  </div>
+  
+</body>
+</html>
