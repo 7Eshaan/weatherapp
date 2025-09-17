@@ -100,7 +100,7 @@ async function getweatherdata(){
             appcontainer.style.background = "linear-gradient(45deg, #4682B4, #1E90FF, #4169E1)";
             break;
         case "Thunder":
-            appcontainer.style.background = "linear-gradient(45deg, #2F4F4F, #483D8B, #6A5ACD)";
+            appcontainer.style.background = "linear-gradient(to right, #8e2de2, #4a00e0)";
             break;
     }
 
